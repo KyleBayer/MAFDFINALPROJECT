@@ -1,2 +1,4 @@
 C:\Users\KB\source\repos\EDITS\EDITS\bin\x86\Debug\EDITS.exe
 C:\Users\KB\source\repos\EDITS\EDITS\obj\x86\Debug\EDITS.exe
+C:\Users\KB\source\repos\MAFDFINALPROJECT\EDITS\EDITS\bin\x86\Debug\EDITS.exe
+C:\Users\KB\source\repos\MAFDFINALPROJECT\EDITS\EDITS\obj\x86\Debug\EDITS.exe

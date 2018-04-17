@@ -50,6 +50,43 @@
 
        working-storage section.
 
+       
+
+       01 ws-line-break                pic x(36)
+           value spaces.
+
+       01 ws-error-message.
+           05 ws-heading               pic x(7)
+               value "Errors:".
+           05 filler                   pic x(2)
+               value spaces.
+           05 ws-transaction-code      pic X.
+           05 filler                   pic x(2)
+               value spaces.
+           05 ws-transaction-amt       pic 9(5).
+           05 filler                   pic x(2)
+               value spaces.
+           05 ws-payment-type          pic XX.
+           05 filler                   pic x(2)
+               value spaces.
+           05 ws-store-number          pic XX.
+           05 filler                   pic x(2)
+               value spaces.
+           05 ws-sku-code              pic X(15).
+
+       01 ws-total-valid.
+           05 filler                   pic x(15)
+               value "Valid Records: ".
+           05 ws-valid           pic 9(2)
+               value 0.
+           
+
+       01 ws-total-invalid.
+           05 filler                   pic x(17)
+               value "Invalid Records: ".
+           01 ws-invalid             pic 9(2)
+           value 0.
+
        77 ws-eof-flag                  pic x
            value "N".
        77 ws-transaction-code-flag     pic x
@@ -75,7 +112,8 @@
            
       * iterate through all input lines        
            perform 20-process-lines until ws-eof-flag = "Y".
-
+      * write totals
+           perform 50-output-totals.
       * close files
            close input-file valid-file invalid-file.
            
@@ -92,6 +130,8 @@
                if(il-transaction-code is not equal to "R")
                    if(il-transaction-code is not equal to "L")
                         move "N" to ws-transaction-code-flag
+                        move il-transaction-code to ws-transaction-code
+
                    else
                        move "Y" to ws-transaction-code-flag
                    end-if
@@ -107,6 +147,7 @@
                move "Y" to ws-transaction-amt-flag
            else
                move "N" to ws-transaction-amt-flag
+               move il-transaction-amount to ws-transaction-amt
            end-if
 
       * Checks if payment type is ‘CA’, ‘CR’ or ‘DB’
@@ -114,6 +155,7 @@
                if(il-payment-type is not equal to "CR")
                    if(il-payment-type is not equal to "DB")
                         move "N" to ws-payment-type-flag
+                        move il-payment-type to ws-payment-type
                    else
                        move "Y" to ws-payment-type-flag
                    end-if
@@ -130,6 +172,7 @@
                if(il-store-number is not equal to 02)
                    if(il-store-number is not equal to 03)
                         move "N" to ws-store-number-flag
+                        move il-store-number to ws-store-number
                    else
                        move "Y" to ws-store-number-flag
                    end-if
@@ -144,20 +187,11 @@
            end-if
           
       * Error validation for empty spaces
-           if(il-transaction-code is not equal to spaces) then
-            if(il-transaction-amount is not equal to spaces) then
-              if(il-payment-type is not equal to spaces) then
-                if(il-store-number is not equal to spaces) then
-                   move "Y" to ws-spaces-flag
-                else
-                    move "N" to ws-spaces-flag
-                end-if
-                else move "N" to ws-spaces-flag
-              end-if
-              else move "N" to ws-spaces-flag
-            end-if
-           else 
+           if(il-sku-code is equal to spaces) then
                move "N" to ws-spaces-flag
+               move il-sku-code to ws-sku-code
+           else
+               move "Y" to ws-spaces-flag
            end-if
       *TODO: output record to appropriate file based on results of validaiton processing
         if (ws-spaces-flag is equal to "Y") then
@@ -166,32 +200,47 @@
                    if(ws-transaction-amt-flag is equal to "Y") then
                        if(ws-transaction-code-flag is equal to "Y") then
                            perform 30-output-valid-record
+                           
+
                        else
                            perform 40-output-invalid-record
+                            
                    end-if
-                   else perform 40-output-invalid-record
+                   else
+                       perform 40-output-invalid-record
+                        
                end-if
                else 
                    perform 40-output-invalid-record
+                    
                end-if
            else 
                perform 40-output-invalid-record
+               
            end-if
         else 
             perform 40-output-invalid-record
+             
            end-if
 
-      
-
-           
       * read next input-file record
            read input-file at end move "Y" to ws-eof-flag
            end-perform. 
 
        30-output-valid-record.
+           add 1 to ws-valid.
            write valid-line from input-line.
 
        40-output-invalid-record.
+           add 1 to ws-invalid.
            write invalid-line from input-line.
+           write invalid-line from ws-error-message.
+           write invalid-line from ws-line-break.
 
+       50-output-totals.
+           write invalid-line from ws-line-break.
+           write invalid-line from ws-line-break.
+           write valid-line from ws-total-valid.
+           write invalid-line from ws-line-break.
+           write invalid-line from ws-total-invalid.
        end program EDITS.
