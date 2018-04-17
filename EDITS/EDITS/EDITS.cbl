@@ -77,15 +77,15 @@
        01 ws-total-valid.
            05 filler                   pic x(15)
                value "Valid Records: ".
-           05 ws-valid           pic 9(2)
+           05 ws-valid                 pic 9(3)
                value 0.
            
 
        01 ws-total-invalid.
            05 filler                   pic x(17)
                value "Invalid Records: ".
-           01 ws-invalid             pic 9(2)
-           value 0.
+           05 ws-invalid               pic 9(2)
+               value 0.
 
        77 ws-eof-flag                  pic x
            value "N".
