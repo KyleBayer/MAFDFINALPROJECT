@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <ProjectGuid>5c83444b-2bae-4deb-afb6-4764ca7b0e61</ProjectGuid>
+    <ProjectGuid>{5C83444B-2BAE-4DEB-AFB6-4764CA7B0E61}</ProjectGuid>
     <OutputName>DataSplitCount</OutputName>
     <OutputType>Exe</OutputType>
     <RootNamespace>DataSplitCount</RootNamespace>
@@ -23,7 +23,10 @@
     <MaxError>100</MaxError>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Program1.cbl" />
+    <Compile Include="DataSplitCount.cbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Micro Focus\Visual COBOL\v1.0\MicroFocus.COBOL.targets" />
 </Project>
