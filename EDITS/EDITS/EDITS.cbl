@@ -37,13 +37,13 @@
            05 il-sku-code              pic X(15).
 
        fd valid-file
-           data record is credit-line
+           data record is valid-line
            record contains 36 characters.
       * declare valid line
        01 valid-line                   pic x(36).
 
        fd invalid-file
-           data record is debit-line
+           data record is invalid-line
            record contains 36 characters.
       * declare invalid line
        01 invalid-line                 pic x(36).
@@ -200,7 +200,6 @@
                    if(ws-transaction-amt-flag is equal to "Y") then
                        if(ws-transaction-code-flag is equal to "Y") then
                            perform 30-output-valid-record
-                           
 
                        else
                            perform 40-output-invalid-record
@@ -208,7 +207,6 @@
                    end-if
                    else
                        perform 40-output-invalid-record
-                        
                end-if
                else 
                    perform 40-output-invalid-record
