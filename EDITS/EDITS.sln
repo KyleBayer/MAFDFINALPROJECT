@@ -7,6 +7,8 @@ Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "EDITS", "EDITS\EDITS.cblpro
 EndProject
 Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "DataSplitCount", "DataSplitCount\DataSplitCount.cblproj", "{5C83444B-2BAE-4DEB-AFB6-4764CA7B0E61}"
 EndProject
+Project("{535C04D7-A2A5-47C7-83E0-B340A995CD1F}") = "TypeRProcessing", "TypeRProcessing\TypeRProcessing.cblproj", "{20942D2B-C210-4A28-A0DC-9F98D9596EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,6 +23,10 @@ Global
 		{5C83444B-2BAE-4DEB-AFB6-4764CA7B0E61}.Debug|x86.Build.0 = Debug|x86
 		{5C83444B-2BAE-4DEB-AFB6-4764CA7B0E61}.Release|x86.ActiveCfg = Release|x86
 		{5C83444B-2BAE-4DEB-AFB6-4764CA7B0E61}.Release|x86.Build.0 = Release|x86
+		{20942D2B-C210-4A28-A0DC-9F98D9596EF7}.Debug|x86.ActiveCfg = Debug|x86
+		{20942D2B-C210-4A28-A0DC-9F98D9596EF7}.Debug|x86.Build.0 = Debug|x86
+		{20942D2B-C210-4A28-A0DC-9F98D9596EF7}.Release|x86.ActiveCfg = Release|x86
+		{20942D2B-C210-4A28-A0DC-9F98D9596EF7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
