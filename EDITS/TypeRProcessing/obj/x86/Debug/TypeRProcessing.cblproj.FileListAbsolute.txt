@@ -1,0 +1,2 @@
+C:\Users\KB\source\repos\MAFDFINALPROJECT\EDITS\TypeRProcessing\bin\x86\Debug\TypeRProcessing.exe
+C:\Users\KB\source\repos\MAFDFINALPROJECT\EDITS\TypeRProcessing\obj\x86\Debug\TypeRProcessing.exe
