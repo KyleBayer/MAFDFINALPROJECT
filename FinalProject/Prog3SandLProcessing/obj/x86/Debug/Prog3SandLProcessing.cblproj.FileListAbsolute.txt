@@ -1,0 +1,2 @@
+C:\School\Sem4\MAFD 4202\MAFDFINALPROJECT\FinalProject\Prog3SandLProcessing\bin\x86\Debug\SLProcessing.exe
+C:\School\Sem4\MAFD 4202\MAFDFINALPROJECT\FinalProject\Prog3SandLProcessing\obj\x86\Debug\SLProcessing.exe

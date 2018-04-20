@@ -60,11 +60,29 @@
 
        fd report-file
            data record is report-line
-           record contains 36 characters.
+           record contains 40 characters.
 
-       01 report-line                      pic x(36).
+       01 report-line                      pic x(40).
 
        working-storage section.
+
+       01 ws-title.
+           05 ws-date                  pic 9(6)
+               value 0.
+           05 filler                   pic x(5)
+               value spaces.
+           05 ws-time                  pic 9(8)
+               value 0.
+
+       01 ws-title-line-2.
+           05 filler                   pic x(26)
+               value "DATA SPLIT & COUNT REPORT".
+
+       01 ws-name-line.
+           05 filler                   pic x(40)
+               value "KYLE BAYER, JOREE MIRANDA, ASHANTE SMITH".
+
+
 
        01 ws-transaction-code             pic x
            value spaces.
@@ -184,7 +202,12 @@
        
       * read initial record from input-file
            read input-file at end move "Y" to ws-eof-flag.
-           
+           accept ws-date from date.
+           accept ws-time from time.
+
+           write report-line from ws-title.
+           write report-line from ws-title-line-2.
+           write report-line from ws-name-line.
            perform until ws-eof-flag = 'Y'
                perform 00-main
            end-perform.
@@ -252,6 +275,7 @@
 
        40-output-totals.
            write report-line from ws-total-sale-layaways-detail
+               after advancing 1 line.
            write report-line from ws-total-sale-detail.
            write report-line from ws-total-layaways-detail.
            write report-line from ws-total-returns-detail.

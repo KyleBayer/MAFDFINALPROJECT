@@ -1,5 +1,11 @@
        identification division.
        program-id. EDITS.
+       author. Joree Miranda, Kyle Bayer, Ashante Smith
+       date-written. 2018-04-20
+      *This is our 1st program for our mafd final project. It will 
+      *read an data file, and sort which record is valid, and which is
+      *invalid. It will also make a report which show the record that is
+      *invalid and show what is wrong with the record.
 
        environment division.
        configuration section.
@@ -54,10 +60,26 @@
 
        fd report-file
            data record is report-line
-           record contains 36 characters.
-       01 report-line                  pic x(36).
+           record contains 40 characters.
+       01 report-line                  pic x(40).
 
        working-storage section.
+
+       01 ws-title.
+           05 ws-date                  pic 9(6)
+               value 0.
+           05 filler                   pic x(5)
+               value spaces.
+           05 ws-time                  pic 9(8)
+               value 0.
+
+       01 ws-title-line-2.
+           05 filler                   pic x(11)
+               value "EDIT REPORT".
+
+       01 ws-name-line.
+           05 filler                   pic x(40)
+               value "KYLE BAYER, JOREE MIRANDA, ASHANTE SMITH".
 
        
 
@@ -69,19 +91,23 @@
                value "Errors:".
            05 filler                   pic x(2)
                value spaces.
-           05 ws-transaction-code      pic X.
+           05 ws-transaction-code      pic X
+               value spaces.
            05 filler                   pic x(2)
                value spaces.
            05 ws-transaction-amt       pic 9(5).
            05 filler                   pic x(2)
                value spaces.
-           05 ws-payment-type          pic XX.
+           05 ws-payment-type          pic XX
+               value spaces.
            05 filler                   pic x(2)
                value spaces.
-           05 ws-store-number          pic XX.
+           05 ws-store-number          pic XX
+               value spaces.
            05 filler                   pic x(2)
                value spaces.
-           05 ws-sku-code              pic X(15).
+           05 ws-sku-code              pic X(15)
+               value spaces.
 
        01 ws-total-valid.
            05 filler                   pic x(15)
@@ -114,17 +140,23 @@
        00-main.
       * open files
            open input input-file.
-           open output valid-file invalid-file.
+           open output valid-file invalid-file report-file.
        
       * read initial record from input-file
            read input-file at end move "Y" to ws-eof-flag.
+           accept ws-date from date.
+           accept ws-time from time.
+
+           write report-line from ws-title.
+           write report-line from ws-title-line-2.
+           write report-line from ws-name-line.
            
       * iterate through all input lines        
            perform 20-process-lines until ws-eof-flag = "Y".
       * write totals
            perform 50-output-totals.
       * close files
-           close input-file valid-file invalid-file.
+           close input-file valid-file invalid-file report-file.
            
            goback.
 
@@ -241,13 +273,14 @@
        40-output-invalid-record.
            add 1 to ws-invalid.
            write invalid-line from input-line.
-           write invalid-line from ws-error-message.
-           write invalid-line from ws-line-break.
+           write report-line from input-line.
+           write report-line from ws-error-message.
+           write report-line from ws-line-break.
 
        50-output-totals.
            write invalid-line from ws-line-break.
            write invalid-line from ws-line-break.
-           write valid-line from ws-total-valid.
+           write report-line from ws-total-valid.
            write invalid-line from ws-line-break.
-           write invalid-line from ws-total-invalid.
+           write report-line from ws-total-invalid.
        end program EDITS.

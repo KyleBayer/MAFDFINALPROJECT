@@ -19,7 +19,7 @@
            organization is line sequential.
 
            select output-file
-           assign to "../../../data/returns.out"
+           assign to "../../../data/Prog4Report.out"
            organization is line sequential.
 
        data division.
@@ -39,31 +39,37 @@
 
        fd output-file
            data record is output-line
-           record contains 36 characters.
+           record contains 53 characters.
        
-       01 print-line                   pic x(75).
+       01 print-line                   pic x(53).
 
        working-storage section.
 
        01 ws-output-line.
            05 filler                   pic X(2)
                value spaces.
-           05 ol-transaction-code      pic X.
-           05 filler                   pic X(2)
+           05 ol-transaction-code      pic X
                value spaces.
-           05 ol-transaction-amount    pic $99.99.
-           05 filler                   pic X(2)
-               value spaces.
-           05 ol-payment-type          pic XX.
            05 filler                   pic X(3)
                value spaces.
-           05 ol-store-number          pic XX.
-           05 filler                   pic X(4)
-               value spaces.
-           05 ol-invoice-number        pic X(9).
+           05 ol-transaction-amount    pic $z9.99
+               value 0.
            05 filler                   pic X(2)
                value spaces.
-           05 ol-sku-code              pic X(15).
+           05 ol-payment-type          pic XX
+               value spaces.
+           05 filler                   pic X(3)
+               value spaces.
+           05 ol-store-number          pic XX
+               value spaces.
+           05 filler                   pic X(4)
+               value spaces.
+           05 ol-invoice-number        pic X(9)
+               value spaces.
+           05 filler                   pic X(4)
+               value spaces.
+           05 ol-sku-code              pic X(15)
+               value spaces.
 
        01 ws-eof-flag                  pic x
            value "N".
@@ -72,22 +78,16 @@
            value spaces.
 
        01 ws-report-heading.
-           05 filler                   pic x(16)
+           05 ws-date                  pic 9(6)
+               value 0.
+           05 filler                   pic x(5)
                value spaces.
-           05 ws-title                 pic x(17)
-               value "Type R Processing".
-           05 filler                       pic x(9)
+           05 ws-time                  pic 9(8)
+               value 0.
+           05 filler                   pic x(12)
                value spaces.
-           05 filler                       pic x(6)
-               value "Date: ".
-           05 ws-date                      pic 9(6)
-           value 0.
-           05 filler                       pic x(3)
-               value spaces.
-           05 filler                       pic x(6)    
-               value "time: ".
-           05 ws-time                      pic 9(8)
-           value 0.
+           05 filler                   pic x(22)
+               value "TYPE R PROCESSSING".
 
        01 ws-header.
              
@@ -114,10 +114,8 @@
            05 filler                   pic x(8)
                value "SKU Code".
        01 ws-group-names.
-           05 filler                   pic x(9)
-               value "Authors: ".
            05 filler                   pic x(40)
-               value "Kyle Bayer, Joree Miranda, Ashante Smith".
+               value "KYLE BAYER, JOREE MIRANDA, ASHANTE SMITH".
 
                          
 
@@ -140,12 +138,19 @@
            05 ws-record-count          pic 99
                value 0.
 
+       01 ws-temp-total-amount         pic 999v99
+           value 0.
+       01 ws-total-amount.
+           05 filler                   pic x(19)
+               value "Total Amount: ".
+           05 ws-total-amount-output   pic $999.99
+               value 0.
+
        01 ws-tax-owed.
-           05 filler                   pic x(11)
+           05 filler                   pic x(19)
                value "Tax owed: ".
            05 ws-tax-total             pic $99.99.
        
-       77 ws-tax-temp                  pic 9(5)V99.
        77 ws-lines-per-page            pic 99
            value 20.
        77 ws-line-count                pic 99
@@ -183,28 +188,32 @@
            perform until ws-eof-flag = 'Y'
                add 1 to ws-page-count
                write print-line from ws-page-title
+
                perform 00-main-logic
                varying ws-line-count
                from 1 by 1
                until (ws-eof-flag = 'Y'
                       OR ws-line-count > ws-lines-per-page)
 
-           write print-line from ws-number-records
 
-           write print-line from ws-tax-owed
 
            end-perform.
            
+           write print-line from ws-number-records
+               after advancing 1 line.
            
+           write print-line from ws-total-amount
+           write print-line from ws-tax-owed
+
            close input-file output-file.
 
            goback.
 
        00-main-logic.
-           perform 30-processing-data
-           perform 40-write-output
-           add il-transaction-amount to ws-tax-temp
-           perform 50-calculate-tax
+           perform 30-processing-data.
+           perform 40-write-output.
+           perform 50-calculate-total.
+           perform 60-calculate-tax.
            read input-file at end move 'Y' to ws-eof-flag.
 
        20-output-header.
@@ -221,12 +230,17 @@
            move il-transaction-code to ol-transaction-code.
 
        40-write-output.
-           add 1 to ws-record-count
+           add 1 to ws-record-count.
            write print-line from ws-output-line.
-           
+       
 
-       50-calculate-tax.
-           multiply ws-tax-temp by ws-13-percent giving ws-tax-total.
+       50-calculate-total.
+           add il-transaction-amount to ws-temp-total-amount.
+           move ws-temp-total-amount to ws-total-amount-output.
+
+       60-calculate-tax.
+           multiply ws-temp-total-amount
+               by ws-13-percent giving ws-tax-total.
        end program TypeRProcessing.
 
        

@@ -1,0 +1,2 @@
+C:\School\Sem4\MAFD 4202\MAFDFINALPROJECT\FinalProject\Prog1Edits\bin\x86\Debug\EDITS.exe
+C:\School\Sem4\MAFD 4202\MAFDFINALPROJECT\FinalProject\Prog1Edits\obj\x86\Debug\EDITS.exe
