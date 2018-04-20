@@ -14,11 +14,15 @@
 
       * output file declarations
            select valid-file
-           assign to "../../../data/valid.out"
+           assign to "../../../data/valid.dat"
            organization is line sequential.
 
            select invalid-file
-           assign to "../../../data/invalid.out"
+           assign to "../../../data/invalid.dat"
+           organization is line sequential.
+
+           select report-file
+           assign to "../../../data/Prog1Report.out"
            organization is line sequential.
 
        data division.
@@ -47,6 +51,11 @@
            record contains 36 characters.
       * declare invalid line
        01 invalid-line                 pic x(36).
+
+       fd report-file
+           data record is report-line
+           record contains 36 characters.
+       01 report-line                  pic x(36).
 
        working-storage section.
 
