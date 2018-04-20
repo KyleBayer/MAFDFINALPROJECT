@@ -1,5 +1,11 @@
        identification division.
        program-id. TypeRProcessing.
+       author. Joree Miranda, Kyle Bayer, Ashante Smith
+       date-written. 2018-04-19
+      * This is the fourth program file created as part of our 
+      * MAFD 4201 Final Project. The purpose of this program is to
+      * produce a detail report of all returns.
+        
 
        environment division.
        configuration section.
@@ -45,7 +51,7 @@
            05 ol-transaction-code      pic X.
            05 filler                   pic X(2)
                value spaces.
-           05 ol-transaction-amount    pic 9(5)V99.
+           05 ol-transaction-amount    pic $99.99.
            05 filler                   pic X(2)
                value spaces.
            05 ol-payment-type          pic XX.
@@ -117,7 +123,7 @@
        01 ws-tax-owed.
            05 filler                   pic x(11)
                value "Tax owed: ".
-           05 ws-tax-total             pic 9(5)V99.
+           05 ws-tax-total             pic $99.99.
        
        77 ws-tax-temp                  pic 9(5)V99.
        77 ws-lines-per-page            pic 99
