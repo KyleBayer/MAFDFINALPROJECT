@@ -81,8 +81,6 @@
            05 filler                   pic x(40)
                value "KYLE BAYER, JOREE MIRANDA, ASHANTE SMITH".
 
-       
-
        01 ws-line-break                pic x(36)
            value spaces.
 
@@ -113,6 +111,12 @@
            05 filler                   pic x(15)
                value "Valid Records: ".
            05 ws-valid                 pic 9(3)
+               value 0.
+
+       01 ws-total.
+           05 filler                   pic x(15)
+               value "Total Records: ".
+           05 ws-total-output          pic 9(3)
                value 0.
            
 
@@ -153,6 +157,8 @@
            
       * iterate through all input lines        
            perform 20-process-lines until ws-eof-flag = "Y".
+
+           perform 45-calculate-totals.
       * write totals
            perform 50-output-totals.
       * close files
@@ -276,6 +282,9 @@
            write report-line from input-line.
            write report-line from ws-error-message.
            write report-line from ws-line-break.
+       
+       45-calculate-totals.
+           add ws-valid ws-invalid giving ws-total-output.
 
        50-output-totals.
            write invalid-line from ws-line-break.
@@ -283,4 +292,5 @@
            write report-line from ws-total-valid.
            write invalid-line from ws-line-break.
            write report-line from ws-total-invalid.
+           write report-line from ws-total.
        end program EDITS.
