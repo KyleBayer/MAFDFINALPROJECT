@@ -183,8 +183,8 @@
           
        50-calculate-percentage.
            compute ws-layaways-percentage rounded = 
-             ws-total-layaways / ws-total-sale-layaways.
+               ws-total-layaways / ws-total-sale-layaways.
 
            compute ws-sales-percentage rounded =
-             ws-total-sales / ws-total-sale-layaways.
+               ws-total-sales / ws-total-sale-layaways.
        end program DataSplitCount.
