@@ -117,7 +117,7 @@
                value spaces.
            05 filler                   pic x(8)
                value spaces.
-           05 ws-store-number          pic XX
+           05 ws-store-number          pic Z9
                value spaces.
            05 filler                   pic x(6)
                value spaces.

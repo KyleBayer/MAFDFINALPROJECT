@@ -1,124 +1,124 @@
-180420     02054203            SALES & LAYAWAYS REPORT             GROUP 3
+180420     02190229            SALES & LAYAWAYS REPORT             GROUP 3
 ----------------------------------------PAGE 1-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
-SALE        $    10.00   $     1.30     CASH          01      XX-000001   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         01      AZ-000002   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        01      AS-000003   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         01      AD-000004   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          01      XX-000005   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        01      AZ-000006   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         01      AS-000007   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          01      XX-000008   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         01      AZ-000009   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        01      AS-000010   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          01      XX-000011   SDFSKJ84MS091
-LAYAWAY     $ 1,129.99   $   146.90     DEBIT         01      AZ-000012   247R20EHF02EF
-SALE        $     9.99   $     1.30     CREDIT        01      AS-0000A3   WI8HRW8H43FJS
-LAYAWAY     $    10.00   $     1.30     CASH          01      XX-000101   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         01      AZ-000102   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        01      AS-000103   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         01      BD-000104   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          01      BX-000105   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        01      BZ-000106   247R20EHF02EF
-SALE        $    10.00   $     1.30     CASH          01      BX-000108   SDFSKJ84MS091----------------------------------------PAGE 2-----------------------------------------
+SALE        $    10.00   $     1.30     CASH           1      XX-000001   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          1      AZ-000002   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         1      AS-000003   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          1      AD-000004   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           1      XX-000005   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         1      AZ-000006   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          1      AS-000007   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           1      XX-000008   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          1      AZ-000009   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         1      AS-000010   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           1      XX-000011   SDFSKJ84MS091
+LAYAWAY     $ 1,129.99   $   146.90     DEBIT          1      AZ-000012   247R20EHF02EF
+SALE        $     9.99   $     1.30     CREDIT         1      AS-0000A3   WI8HRW8H43FJS
+LAYAWAY     $    10.00   $     1.30     CASH           1      XX-000101   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          1      AZ-000102   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         1      AS-000103   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          1      BD-000104   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           1      BX-000105   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         1      BZ-000106   247R20EHF02EF
+SALE        $    10.00   $     1.30     CASH           1      BX-000108   SDFSKJ84MS091----------------------------------------PAGE 2-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
-SALE        $   129.99   $    16.90     DEBIT         01      BZ-000109   247R20EHF02EF
-SALE        $    10.00   $     1.30     CASH          01      BX-000111   SDFSKJ84MS091
-SALE        $ 1,129.99   $   146.90     DEBIT         01      BZ-000112   247R20EHF02EF
-SALE        $     9.99   $     1.30     CREDIT        01      BS-000113   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         02      BD-000014   LFW8H88W84HFW
-SALE        $   149.99   $    19.50     CREDIT        02      AZ-000016   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         02      AS-000017   WI8HRW8H43FJS
-SALE        $   129.99   $    16.90     DEBIT         02      BZ-000019   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        02      AS-000023   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         02      BD-000024   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          02      XX-000025   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        02      AZ-000026   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         02      AS-000027   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          02      XX-000028   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         02      AZ-000029   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        02      AS-0S0030   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          02      XX-000031   SDFSKJ84MS091
-SALE        $ 1,129.99   $   146.90     DEBIT         02      AZ-000032   247R20EHF02EF
-LAYAWAY     $   149.99   $    19.50     DEBIT         02      AD-000034   LFW8H88W84HFW
-LAYAWAY     $    49.99   $     6.50     DEBIT         02      AD-000214   LFW8H88W84HFW----------------------------------------PAGE 3-----------------------------------------
+SALE        $   129.99   $    16.90     DEBIT          1      BZ-000109   247R20EHF02EF
+SALE        $    10.00   $     1.30     CASH           1      BX-000111   SDFSKJ84MS091
+SALE        $ 1,129.99   $   146.90     DEBIT          1      BZ-000112   247R20EHF02EF
+SALE        $     9.99   $     1.30     CREDIT         1      BS-000113   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          2      BD-000014   LFW8H88W84HFW
+SALE        $   149.99   $    19.50     CREDIT         2      AZ-000016   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          2      AS-000017   WI8HRW8H43FJS
+SALE        $   129.99   $    16.90     DEBIT          2      BZ-000019   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         2      AS-000023   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          2      BD-000024   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           2      XX-000025   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         2      AZ-000026   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          2      AS-000027   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           2      XX-000028   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          2      AZ-000029   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         2      AS-0S0030   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           2      XX-000031   SDFSKJ84MS091
+SALE        $ 1,129.99   $   146.90     DEBIT          2      AZ-000032   247R20EHF02EF
+LAYAWAY     $   149.99   $    19.50     DEBIT          2      AD-000034   LFW8H88W84HFW
+LAYAWAY     $    49.99   $     6.50     DEBIT          2      AD-000214   LFW8H88W84HFW----------------------------------------PAGE 3-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
-SALE        $   149.99   $    19.50     CREDIT        02      AZ-000216   247R20EHF02EF
-SALE        $    10.00   $     1.30     CASH          02      XX-000201   AADFSKJ84MS09
-SALE        $    89.99   $    11.70     CREDIT        02      AS-000223   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         02      A3-000224   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          02      X3-000225   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        02      AZ-000226   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         02      AS-000227   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          02      XX-000228   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         02      AZ-000229   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        02      AS-000230   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          02      XX-000231   SDFSKJ84MS091
-SALE        $ 1,129.99   $   146.90     DEBIT         02      AZ-000232   247R20EHF02EF
-SALE        $     9.99   $     1.30     CREDIT        02      AS-000233   WI8HRW8H43FJS
-SALE        $    29.99   $     3.90     DEBIT         02      AS-000337   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          03      XX-000401   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         03      AZ-000402   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        03      AS-000403   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         03      AD-000404   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          03      XX-000405   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        03      AZ-000406   247R20EHF02EF----------------------------------------PAGE 4-----------------------------------------
+SALE        $   149.99   $    19.50     CREDIT         2      AZ-000216   247R20EHF02EF
+SALE        $    10.00   $     1.30     CASH           2      XX-000201   AADFSKJ84MS09
+SALE        $    89.99   $    11.70     CREDIT         2      AS-000223   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          2      A3-000224   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           2      X3-000225   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         2      AZ-000226   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          2      AS-000227   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           2      XX-000228   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          2      AZ-000229   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         2      AS-000230   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           2      XX-000231   SDFSKJ84MS091
+SALE        $ 1,129.99   $   146.90     DEBIT          2      AZ-000232   247R20EHF02EF
+SALE        $     9.99   $     1.30     CREDIT         2      AS-000233   WI8HRW8H43FJS
+SALE        $    29.99   $     3.90     DEBIT          2      AS-000337   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           3      XX-000401   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          3      AZ-000402   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         3      AS-000403   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          3      AD-000404   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           3      XX-000405   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         3      AZ-000406   247R20EHF02EF----------------------------------------PAGE 4-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
-SALE        $    29.99   $     3.90     DEBIT         03      AS-000407   WI8HRW8H43FJS
-SALE        $   129.99   $    16.90     DEBIT         03      AZ-000409   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        03      AS-000410   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          03      XX-000411   SDFSKJ84MS091
-LAYAWAY     $ 1,129.99   $   146.90     DEBIT         03      AZ-000412   247R20EHF02EF
-SALE        $     9.99   $     1.30     CREDIT        03      AS-000413   WI8HRW8H43FJS
-LAYAWAY     $    10.00   $     1.30     CASH          03      XX-000401   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         03      AZ-000402   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        03      AS-000403   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         03      BD-000404   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          07      BX-000405   SDFSKJ84MS091
-SALE        $    10.00   $     1.30     CASH          07      BX-00S508   SDFSKJ84MS091
-SALE        $   129.99   $    16.90     DEBIT         07      BZ-000509   247R20EHF02EF
-SALE        $    10.00   $     1.30     CASH          07      BX-000511   SDFSKJ84MS091
-SALE        $ 1,129.99   $   146.90     DEBIT         07      BZ-000512   247R20EHF02EF
-SALE        $     9.99   $     1.30     CREDIT        07      BS-000513   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         07      BD-000514   LFW8H88W84HFW
-SALE        $   149.99   $    19.50     CREDIT        07      AZ-000516   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         07      AS-000517   WI8HRW8H43FJS
-SALE        $   729.99   $    94.90     DEBIT         07      BZ-000519   247R20EHF02EF----------------------------------------PAGE 5-----------------------------------------
+SALE        $    29.99   $     3.90     DEBIT          3      AS-000407   WI8HRW8H43FJS
+SALE        $   129.99   $    16.90     DEBIT          3      AZ-000409   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         3      AS-000410   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           3      XX-000411   SDFSKJ84MS091
+LAYAWAY     $ 1,129.99   $   146.90     DEBIT          3      AZ-000412   247R20EHF02EF
+SALE        $     9.99   $     1.30     CREDIT         3      AS-000413   WI8HRW8H43FJS
+LAYAWAY     $    10.00   $     1.30     CASH           3      XX-000401   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          3      AZ-000402   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         3      AS-000403   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          3      BD-000404   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           7      BX-000405   SDFSKJ84MS091
+SALE        $    10.00   $     1.30     CASH           7      BX-00S508   SDFSKJ84MS091
+SALE        $   129.99   $    16.90     DEBIT          7      BZ-000509   247R20EHF02EF
+SALE        $    10.00   $     1.30     CASH           7      BX-000511   SDFSKJ84MS091
+SALE        $ 1,129.99   $   146.90     DEBIT          7      BZ-000512   247R20EHF02EF
+SALE        $     9.99   $     1.30     CREDIT         7      BS-000513   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          7      BD-000514   LFW8H88W84HFW
+SALE        $   149.99   $    19.50     CREDIT         7      AZ-000516   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          7      AS-000517   WI8HRW8H43FJS
+SALE        $   729.99   $    94.90     DEBIT          7      BZ-000519   247R20EHF02EF----------------------------------------PAGE 5-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
-SALE        $    89.99   $    11.70     CREDIT        07      AS-000523   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         07      BD-000524   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          07      XX-000525   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        07      AZ-000526   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         07      AS-000527   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          07      XX-000528   SDFSKJ84MS091
-SALE        $   129.49   $    16.83     DEBIT         07      AZ-000529   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        07      AS-000530   WI8HRW8H43FJS
-SALE        $ 8,010.00   $ 1,041.30     CASH          07      XX-000631   SDFSKJ84MS091
-SALE        $ 1,129.99   $   146.90     DEBIT         07      AZ-000632   247R20EHF02EF
-LAYAWAY     $   149.99   $    19.50     DEBIT         07      AD-000634   LFW8H88W84HFW
-LAYAWAY     $    49.99   $     6.50     DEBIT         07      AD-000614   LFW8H88W84HFW
-SALE        $   149.99   $    19.50     CREDIT        07      AZ-000616   247R20EHF02EF
-SALE        $    10.00   $     1.30     CASH          07      XX-000601   AADFSKJ84MS09
-SALE        $    89.99   $    11.70     CREDIT        07      AS-000623   WI8HRW8H43FJS
-LAYAWAY     $    49.99   $     6.50     DEBIT         07      AD-000624   LFW8H88W84HFW
-SALE        $    20.00   $     2.60     CASH          07      XX-000625   SDFSKJ84MS091
-SALE        $   149.99   $    19.50     CREDIT        07      AZ-000626   247R20EHF02EF
-SALE        $    29.99   $     3.90     DEBIT         07      AS-000627   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          07      XX-000628   SDFSKJ84MS091----------------------------------------PAGE 6-----------------------------------------
+SALE        $    89.99   $    11.70     CREDIT         7      AS-000523   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          7      BD-000524   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           7      XX-000525   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         7      AZ-000526   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          7      AS-000527   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           7      XX-000528   SDFSKJ84MS091
+SALE        $   129.49   $    16.83     DEBIT          7      AZ-000529   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         7      AS-000530   WI8HRW8H43FJS
+SALE        $ 8,010.00   $ 1,041.30     CASH           7      XX-000631   SDFSKJ84MS091
+SALE        $ 1,129.99   $   146.90     DEBIT          7      AZ-000632   247R20EHF02EF
+LAYAWAY     $   149.99   $    19.50     DEBIT          7      AD-000634   LFW8H88W84HFW
+LAYAWAY     $    49.99   $     6.50     DEBIT          7      AD-000614   LFW8H88W84HFW
+SALE        $   149.99   $    19.50     CREDIT         7      AZ-000616   247R20EHF02EF
+SALE        $    10.00   $     1.30     CASH           7      XX-000601   AADFSKJ84MS09
+SALE        $    89.99   $    11.70     CREDIT         7      AS-000623   WI8HRW8H43FJS
+LAYAWAY     $    49.99   $     6.50     DEBIT          7      AD-000624   LFW8H88W84HFW
+SALE        $    20.00   $     2.60     CASH           7      XX-000625   SDFSKJ84MS091
+SALE        $   149.99   $    19.50     CREDIT         7      AZ-000626   247R20EHF02EF
+SALE        $    29.99   $     3.90     DEBIT          7      AS-000627   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           7      XX-000628   SDFSKJ84MS091----------------------------------------PAGE 6-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
-SALE        $   129.99   $    16.90     DEBIT         07      AZ-000629   247R20EHF02EF
-SALE        $    89.99   $    11.70     CREDIT        07      AS-000630   WI8HRW8H43FJS
-SALE        $    10.00   $     1.30     CASH          07      X3-000631   SDFSKJ84MS091
-SALE        $ 1,129.99   $   146.90     DEBIT         07      AZ-000632   247R20EHF02EF
-SALE        $     9.99   $     1.30     CREDIT        07      AS-000633   WI8HRW8H43FJS
-LAYAWAY     $   149.99   $    19.50     DEBIT         07      AD-000634   LFW8H88W84HFW
-SALE        $    29.99   $     3.90     DEBIT         07      AS-000637   WI8HRW8H43FJS
+SALE        $   129.99   $    16.90     DEBIT          7      AZ-000629   247R20EHF02EF
+SALE        $    89.99   $    11.70     CREDIT         7      AS-000630   WI8HRW8H43FJS
+SALE        $    10.00   $     1.30     CASH           7      X3-000631   SDFSKJ84MS091
+SALE        $ 1,129.99   $   146.90     DEBIT          7      AZ-000632   247R20EHF02EF
+SALE        $     9.99   $     1.30     CREDIT         7      AS-000633   WI8HRW8H43FJS
+LAYAWAY     $   149.99   $    19.50     DEBIT          7      AD-000634   LFW8H88W84HFW
+SALE        $    29.99   $     3.90     DEBIT          7      AS-000637   WI8HRW8H43FJS
 
 LAYAWAY TRANSACTIONS:   19SALE TRANSACTIONS:      88
 
