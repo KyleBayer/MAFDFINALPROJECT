@@ -1,5 +1,6 @@
-180420     02190229            SALES & LAYAWAYS REPORT             GROUP 3
-----------------------------------------PAGE 1-----------------------------------------
+180420     12584605            SALES & LAYAWAYS REPORT
+
+JOREE MIRANDA, KYLE BAYER, ASHANTE SMITH----------------------------------------PAGE 1-----------------------------------------
 TRANSACTION    AMOUNT       TAX      PAYMENT TYPE   STORE #   INVOICE #   SKU CODE
 
 SALE        $    10.00   $     1.30     CASH           1      XX-000001   SDFSKJ84MS091
@@ -125,6 +126,6 @@ LAYAWAY TRANSACTIONS:   19SALE TRANSACTIONS:      88
 CASH PERCENTAGE:        27%CREDIT PERCENTAGE:      29%
 DEBIT PERCENTAGE:       44%
 
-TOTAL AMOUNT:           $24,148.72TOTAL SALES AMOUNT:     $20,818.89
-TOTAL LAYAWAYS AMOUNT:  $ 3,329.83
-TOTAL TAX:              $ 3,139.33
+TOTAL SALES AMOUNT:     $20,818.89TOTAL LAYAWAYS AMOUNT:  $ 3,329.83
+
+TOTAL AMOUNT:           $24,148.72TOTAL TAX:              $ 3,139.33

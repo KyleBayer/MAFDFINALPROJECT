@@ -55,10 +55,10 @@
                value spaces.
            05 filler                   pic x(24)
                value "SALES & LAYAWAYS REPORT".
-           05 filler                   pic x(12)
-               value spaces.
-           05 filler                   pic x(7)
-               value "GROUP 3".
+
+       01 ws-name-line.
+           05 filler                   pic x(40)
+               value "JOREE MIRANDA, KYLE BAYER, ASHANTE SMITH".
 
        01 ws-heading.
            05 filler                   pic x(11)
@@ -266,6 +266,7 @@
            accept ws-time from time.
 
            write print-line from ws-title.
+           write print-line from ws-name-line after advancing 1 line.
 
            perform until ws-eof-flag = 'Y'
                add 1 to ws-page-count
@@ -394,12 +395,13 @@
            write print-line from ws-credit-percentage-detail.
            write print-line from ws-debit-percentage-detail.
 
+
+           write print-line
+               from ws-total-sale-amount-detail after advancing 1 line.
+           write print-line 
+               from ws-total-layaways-amount-detail.
            write print-line               
                from ws-total-amount-detail after advancing 1 line.
-           write print-line
-               from ws-total-sale-amount-detail.
-           write print-line
-               from ws-total-layaways-amount-detail.
            write print-line from ws-total-tax-detail
 
        end program SLProcessingProgram.
