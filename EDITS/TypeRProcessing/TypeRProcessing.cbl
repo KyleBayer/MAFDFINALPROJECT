@@ -76,6 +76,18 @@
                value spaces.
            05 ws-title                 pic x(17)
                value "Type R Processing".
+           05 filler                       pic x(9)
+               value spaces.
+           05 filler                       pic x(6)
+               value "Date: ".
+           05 ws-date                      pic 9(6)
+           value 0.
+           05 filler                       pic x(3)
+               value spaces.
+           05 filler                       pic x(6)    
+               value "time: ".
+           05 ws-time                      pic 9(8)
+           value 0.
 
        01 ws-header.
              
@@ -101,6 +113,13 @@
                value spaces.
            05 filler                   pic x(8)
                value "SKU Code".
+       01 ws-group-names.
+           05 filler                   pic x(9)
+               value "Authors: ".
+           05 filler                   pic x(40)
+               value "Kyle Bayer, Joree Miranda, Ashante Smith".
+
+                         
 
        01 ws-page-title.
            05 filler                   pic x(22)
@@ -113,6 +132,7 @@
                value 0.
            05 filler                   pic x(23)
                value "-----------------------".
+           
 
        01 ws-number-records.
            05 filler                   pic x(19)
@@ -132,6 +152,8 @@
            value 0.
        77 ws-13-percent                pic 9(9)v99
            value 0.13.
+
+      
        
 
 
@@ -144,8 +166,15 @@
            
       * read initial record from input-file
            read input-file at end move "Y" to ws-eof-flag.
+
+           accept ws-date from date
+           accept ws-time from time
            
            write print-line from ws-report-heading
+
+           write print-line from ws-line-break
+
+           write print-line from ws-group-names
 
            write print-line from ws-line-break
 
